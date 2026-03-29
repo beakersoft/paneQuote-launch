@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PaneQuote — Quote windows on-site in minutes. Snap a photo, send a quote, and save time. Perfect for UK window fitters."
+    />
+    <meta
+      name="keywords"
+      content="window quotes, on-site quotes, UK window fitters, quick quotes, PaneQuote"
+    />
+    <meta name="author" content="PaneQuote" />
+    <meta property="og:title" content="PaneQuote — Quote Windows On Site" />
+    <meta
+      property="og:description"
+      content="Snap a photo of your window and get an instant quote. Save time and win more jobs with PaneQuote."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://panequote.com" />
+    <meta property="og:image" content="https://panequote.com/hero-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>PaneQuote — Quote Windows on Site</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset default margins/paddings */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        font-family: "Roboto", sans-serif;
+        background: #f0f4f8;
+        color: #346da5;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: #eaf4fb; /* light blue */
+        padding: 30px 10px; /* controlled spacing */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .form-card p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+      }
+
+      /* Form card */
+      .form-card {
+        margin: 20px auto 40px auto;
+        padding: 25px 20px 40px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        max-width: 400px;
+        background: #fff;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        width: 100%;
+      }
+
+      button {
+        padding: 12px;
+        background: #3498db;
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background: #2980b9;
+      }
+
+      .benefit {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* center icon + text */
+        text-align: center;
+        width: 80px; /* optional, can remove for auto width */
+      }
+
+      .benefits {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+      }
+
+      .benefit-icon {
+        font-size: 2rem;
+        margin-bottom: 5px;
+        color: #3498db;
+      }
+
+      .hero-sub {
+        font-size: 1rem;
+        margin-top: 5px;
+        max-width: 400px;
+      }
+
+      /* Footer */
+      .footer {
+        margin: 40px 0 20px;
+        font-size: 0.8rem;
+        color: #888;
+        text-align: center;
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 480px) {
+        .hero {
+          padding: 30px 15px;
+        }
+        .hero h1 {
+          font-size: 1.6rem;
+        }
+        .hero p {
+          font-size: 0.95rem;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PaneQuote",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "PaneQuote helps UK window fitters generate on-site window quotes instantly using photos.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "GBP"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Hero -->
+    <header class="hero">
+      <h1>Instant Window Quotes On-Site</h1>
+    </header>
+
+    <main>
+      <section class="form-card">
+        <p>
+          PaneQuote.com. Built for UK window fitters to quote faster, reduce
+          site visits, and win more jobs.
+        </p>
+        <br />
+        <p>Register your interest now and get access first when we launch!</p>
+        <br />
+        <form action="https://formspree.io/f/mlgojlnd" method="POST">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required />
+          <button type="submit">Register Interest</button>
+        </form>
+        <br />
+
+        <section>
+          <h2>Why use PaneQuote?</h2>
+          <p>
+            Take a photo of the windows, measure, and generate professional
+            quotes on-site.
+          </p>
+          <br />
+          <ul class="benefits">
+            <li class="benefit">
+              <span class="benefit-icon" aria-hidden="true">⚡</span>
+              <span>Generate quotes instantly</span>
+            </li>
+            <li class="benefit">
+              <span class="benefit-icon" aria-hidden="true">💷</span>
+              <span>Price your way</span>
+            </li>
+            <li class="benefit">
+              <span class="benefit-icon" aria-hidden="true">🏆</span>
+              <span>Win more jobs</span>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      &copy; 2026 PaneQuote — Built for UK window fitters.
+    </footer>
+  </body>
+</html>
